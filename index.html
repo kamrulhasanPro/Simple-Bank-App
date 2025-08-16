@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- custom css -->
+     <link rel="stylesheet" href="./style.css">
+
+     <!-- remix icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+
+        <!--starting page -->
+        <div id="start" class="h-screen flex items-center justify-center flex-col space-y-5 ">
+            <figure class="max-w-40  rounded-full ">
+                <img src="./logo.png" class="rounded-full border-2 ">
+            </figure>
+            <div class="mt-16">
+                <button class="font-gabarito font-medium text-sm text-[#1E293B] px-4 py-3 border-2 border-[#1E293B] w-40 rounded-3xl cursor-pointer">Login</button>
+                <button class="font-gabarito font-medium text-sm text-white px-4 py-3 w-40 border-2 border-[#2B8761] rounded-3xl bg-[#2B8761] cursor-pointer">Registration</button>
+            </div>
+
+            <div>
+                <button class="font-gabarito font-medium text-2xl text-[#1E293B] px-4 py-3 border-2 border-[#E2E8F0] w-80 rounded-4xl cursor-pointer" ><i class="ri-google-fill"></i> Google sign up</button>
+            </div>
+        </div>
+
+        <!-- login page -->
+        <div id="login" class="h-screen flex items-center justify-center flex-col ">
+            <h1 class="font-gabarito font-bold text-3xl text-[#1E293B] text-center">Login</h1>
+            <form action="" class="flex flex-col items-start justify-center w-[358px] mt-5">
+
+                <label for="username" class="font-normal text-sm font-gabarito mb-1">E-mail/username</label>
+                <input type="text" name="username" id="username" required placeholder="E-mail/username" class="font-inter py-3 px-4 text-[#94A3B8] border-2 border-[#94A3B8] outline-none rounded-lg w-full mb-3 focus:text-[#1E293B] ">
+
+                <label for="password" class="font-normal text-sm font-gabarito mb-1">Password</label>
+                <input type="password" name="password" id="password" required placeholder="Password" class="font-gabarito py-3 px-4 text-[#94A3B8] border-2 border-[#94A3B8] outline-none rounded-lg w-full mb-3">
+                <div class="text-right w-full">
+
+                    <a href="" class="text-right text-[#3C9AFB] underline font-medium underline-offset-2">Forget Password?</a>
+                </div>
+                <button class="font-gabarito font-medium text-sm text-white px-4 py-3 w-full border-2 border-[#2B8761] rounded-3xl bg-[#2B8761] cursor-pointer mt-12">Login</button>
+
+                <button class="font-gabarito font-medium text-sm text-[#1E293B] px-4 py-3 border-2 border-[#E2E8F0] w-full rounded-3xl cursor-pointer mt-4">Back</button>
+            </form>
+            <div class="flex flex-col items-center w-[358px] mt-10">
+                <a href="" class="text-[#64748B] mb-2">or login with</a>
+                <button class="font-gabarito font-medium text-2xl text-[#1E293B] px-4 py-3 border-2 border-[#E2E8F0] w-full rounded-4xl cursor-pointer" ><i class="ri-google-fill"></i> Google sign up</button>            
+            </div>
+        </div>
+
+
+        <!-- registration page -->
+        <div id="registration" class="h-screen flex items-center justify-center flex-col ">
+            <h1 class="font-gabarito font-bold text-3xl text-[#1E293B] text-center">Registration</h1>
+            <form action="" class="flex flex-col items-start justify-center w-[358px] mt-5">
+
+                <div class="flex gap-2">
+                    
+                    <div class="flex flex-col w-1/2">
+                        <label for="firstname" class="font-normal text-sm font-gabarito mb-1">First Name</label>
+                        <input type="text" name="fullname" id="firstname" required placeholder="First Name" class="font-inter py-3 px-4 text-[#94A3B8] border-2 border-[#94A3B8] outline-none rounded-lg w-full mb-3 focus:text-[#1E293B] ">
+                    </div>
+
+                    <div class="flex flex-col  w-1/2">
+                        <label for="secondname" class="font-normal text-sm font-gabarito mb-1">Second Name</label>
+                        <input type="text" name="secondname" id="secondname" required placeholder="Second Name" class="font-inter py-3 px-4 text-[#94A3B8] border-2 border-[#94A3B8] outline-none rounded-lg w-full mb-3 focus:text-[#1E293B] ">
+                    </div>
+                
+                    
+                </div>
+
+
+                <label for="email" class="font-normal text-sm font-gabarito mb-1">E-mail</label>
+                <input type="text" name="username" id="email" required placeholder="E-mail" class="font-inter py-3 px-4 text-[#94A3B8] border-2 border-[#94A3B8] outline-none rounded-lg w-full mb-3 focus:text-[#1E293B] ">
+
+                <label for="Password" class="font-normal text-sm font-gabarito mb-1">Password</label>
+                <input type="password" name="password" id="Password" required placeholder="Password" class="font-gabarito py-3 px-4 text-[#94A3B8] border-2 border-[#94A3B8] outline-none rounded-lg w-full mb-3">
+
+                <label for="confirm-password" class="font-normal text-sm font-gabarito mb-1">Confirm Password</label>
+                <input type="password" name="password" id="confirm-password" required placeholder="Confirm Password" class="font-gabarito py-3 px-4 text-[#94A3B8] border-2 border-[#94A3B8] outline-none rounded-lg w-full mb-3">
+                
+                <button class="font-gabarito font-medium text-sm text-white px-4 py-3 w-full border-2 border-[#2B8761] rounded-3xl bg-[#2B8761] cursor-pointer mt-8">Registration</button>
+              
+                <button class="font-gabarito font-medium text-sm text-[#1E293B] px-4 py-3 border-2 border-[#E2E8F0] w-full rounded-3xl cursor-pointer mt-4">Back</button>
+              
+            </form>
+            
+        </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
